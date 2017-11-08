@@ -32,29 +32,119 @@
 
   <body>
     <!-- Simple header with fixed tabs. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <div class="col-xs-10">
-          <input type="text" class="form-control" placeholder="Text input">
+    <div class="post-job-header">
+      <div class="row">
+        <div class="search-row col-xs-12">
+          <input type="text" class="search-textfield" placeholder="Search">
         </div>
-        <!-- Bottom row, not visible on scroll -->
-        <div class="mdl-layout__header-row">
-          <!-- Slider with Starting Value -->
-          <form class="form-horizontal" action="index.html" method="post">
-            <div class="form-group">
-              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-              <div class="col-sm-10">
-                <input class="mdl-slider mdl-js-slider" type="range"
-                  min="0" max="100" value="25" tabindex="0">
-              </div>
-            </div>
-          </form>
-
+      </div>
+    </div>
+    <div class="row container">
+      <div class="card">
+        <div class="row">
+          <ul class="mdl-list">
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                <!-- <i class="material-icons mdl-list__item-avatar">person</i> -->
+                <div class="col-xs-2">
+                  <img src="./img/job_icon.png" class="img-card">
+                </div>
+                <div class="col-xs-8">
+                  <span class="job-position">Junior Web Developer</span><br>
+                  <span class="company-name">CSIR</span><br>
+                  <span class="job-location">Thohoyandou, Limpopo</span><br>
+                  <span class="salary-range">R15 000 - R20 000 / month</span><br>
+                  <span class="duration-range">01 Sep 17 - 20 Sep 17</span>
+                </div>
+                <div class="col-xs-2">
+                  <span class="mdl-list__item-secondary-content">
+                    <a id="demo-show-snackbar" class="mdl-list__item-secondary-action" href="#"><i class="flaticon-bookmark-outline"></i></a>
+                    <br>
+                    <button type="button" class="primary-btn btn show-modal">View Job</button>
+                    <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+                      <div class="mdl-snackbar__text"></div>
+                      <button class="mdl-snackbar__action" type="button"></button>
+                    </div>
+                    <!-- <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                      Apply Now
+                    </button> -->
+                  </span>
+                </div>
+                <!-- <span class="mdl-list__item-text-body">
+                  Bryan Cranston played the role of Walter in Breaking Bad. He is also known
+                  for playing Hal in Malcom in the Middle.
+                </span> -->
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                <!-- <i class="material-icons mdl-list__item-avatar">person</i> -->
+                <div class="col-xs-2">
+                  <img src="./img/absa.jpg" class="img-card">
+                </div>
+                <div class="col-xs-8">
+                  <span class="job-position">Developer</span><br>
+                  <span class="company-name">ABSA</span><br>
+                  <span class="job-location">Thohoyandou, Limpopo</span><br>
+                  <span class="salary-range">R15 000 - R20 000 / month</span><br>
+                  <span class="duration-range">01 Nov 17 - 20 Dec 17</span>
+                </div>
+                <div class="col-xs-2">
+                  <span class="mdl-list__item-secondary-content">
+                    <a id="demo-show-snackbar" class="mdl-list__item-secondary-action" href="#"><i class="material-icons">bookmark</i></a>
+                    <br>
+                    <button type="button" class="primary-btn btn show-modal">View Job</button>
+                    <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+                      <div class="mdl-snackbar__text"></div>
+                      <button class="mdl-snackbar__action" type="button"></button>
+                    </div>
+                    <!-- <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                      Apply Now
+                    </button> -->
+                  </span>
+                </div>
+                <!-- <span class="mdl-list__item-text-body">
+                  Bryan Cranston played the role of Walter in Breaking Bad. He is also known
+                  for playing Hal in Malcom in the Middle.
+                </span> -->
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                <!-- <i class="material-icons mdl-list__item-avatar">person</i> -->
+                <div class="col-xs-2">
+                  <img src="./img/fnb.jpg" class="img-card">
+                </div>
+                <div class="col-xs-8">
+                  <span class="job-position">Teller</span><br>
+                  <span class="company-name">FNB</span><br>
+                  <span class="job-location">Thohoyandou, Limpopo</span><br>
+                  <span class="salary-range">R15 000 - R20 000 / month</span><br>
+                  <span class="duration-range">01 Nov 17 - 20 Dec 17</span>
+                </div>
+                <div class="col-xs-2">
+                  <span class="mdl-list__item-secondary-content">
+                    <a id="demo-show-snackbar" class="mdl-list__item-secondary-action" href="#"><i class="material-icons">bookmark</i></a>
+                    <br>
+                    <button type="button" class="primary-btn btn show-modal">View Job</button>
+                    <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+                      <div class="mdl-snackbar__text"></div>
+                      <button class="mdl-snackbar__action" type="button"></button>
+                    </div>
+                    <!-- <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                      Apply Now
+                    </button> -->
+                  </span>
+                </div>
+                <!-- <span class="mdl-list__item-text-body">
+                  Bryan Cranston played the role of Walter in Breaking Bad. He is also known
+                  for playing Hal in Malcom in the Middle.
+                </span> -->
+              </span>
+            </li>
+          </ul>
         </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content"><!-- Your content goes here --></div>
-      </main>
+      </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
