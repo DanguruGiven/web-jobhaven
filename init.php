@@ -2,8 +2,8 @@
 
 session_start();
 
-$client_id = "81k9iehq7zowwq";
-$client_secret = "82rrIAVYvklzST5U";
+$client_id = "";
+$client_secret = "";
 $redirect_uri = "http://exercise.org/callback.php";
 $csrf_token = random_int(1111111, 9999999);
 $scopes = "r_basicprofile%20r_emailaddress";
@@ -25,8 +25,8 @@ function curl($url, $parameters)
 
 function getCallback()
 {
-    $client_id = "81k9iehq7zowwq";
-    $client_secret = "82rrIAVYvklzST5U";
+    $client_id = "";
+    $client_secret = "";
     $redirect_uri = "http://exercise.org/callback.php";
     $csrf_token = random_int(1111111, 9999999);
     $scopes = "r_basicprofile%20r_emailaddress";

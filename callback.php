@@ -3,4 +3,4 @@
 require_once "init.php";
 $user = getCallback();
 $_SESSION['user'] = $user;
-header("location: landing.php");
+header("location: index.php");
