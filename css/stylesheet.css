@@ -54,6 +54,15 @@ body{
 .mdl-badge[data-badge]:after{
   background-color: #fff;
 }
+
+.btn-bottom{
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  index: 9999;
+}
 /*Tab layout, card layout stylesheet*/
 
 .modal-full-screen{
@@ -363,4 +372,28 @@ body{
   margin: 3px 5px;
   padding: 5px;
   border-radius: 5px;
+}
+
+/*View candidate stylesheet*/
+.image-view{
+  background-image: url("./img/background.png");
+  background-size: cover;
+  filter: blur();
+}
+.img-candidate{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10px;
+}
+.btn-altenative{
+  width: 100%;
+  background-color: #ffc107;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 0px;
+}
+.div-subtitle{
+  width: 100%;
+  background-color: #ccc;
 }

@@ -33,3 +33,20 @@ dialog.querySelector('.btn-close').addEventListener('click', function() {
     snackbarContainer.MaterialSnackbar.showSnackbar(data);
   });
 }());
+
+$(document).ready(function(e){
+  //Variables
+  var qualification = '<div><span class="mdl-chip mdl-chip--deletable">
+    <span class="mdl-chip__text">Deletable Chip</span>
+    <button type="button" id="cancel" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+  </span></div>';
+  //Add qualification chip to the form
+  $("#add-qualification").click(function(e){
+    $(".qualification-container").append(qualification);
+  });
+
+  //Remove qualification chip from the form
+  $(".qualification-container").on('click','#cancel', function(e){
+    $(this).parent('div').remove();
+  });
+});
